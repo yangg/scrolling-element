@@ -1,11 +1,24 @@
 {
   "name": "scrolling-element",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.2",
+  "description": "A polyfill for document.scrollingElement",
+  "main": "scrolling-element.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Brook Yang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangg/scrolling-element.git"
+  },
+  "keywords": [
+    "polyfill",
+    "scrollingElement",
+    "document.scrollingElement"
+  ],
+  "bugs": {
+    "url": "https://github.com/yangg/scrolling-element/issues"
+  },
+  "homepage": "https://github.com/yangg/scrolling-element#readme"
 }

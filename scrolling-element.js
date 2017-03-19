@@ -1,6 +1,6 @@
 /**
  * polyfill for document.scrollingElement
- * author: Brook <uedsky@gmail.com>
+ * https://github.com/yangg/scrolling-element
  */
 (function () {
   if (document.scrollingElement) {
