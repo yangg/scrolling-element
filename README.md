@@ -1,6 +1,7 @@
 # document.scrollingElement
+[![npm:](https://img.shields.io/npm/v/scrolling-element.svg?style=flat)](https://www.npmjs.com/packages/scrolling-element)
 
-A polyfill for `document.scrollElement` as defined in the [CSSDOM specification](https://drafts.csswg.org/cssom-view/#dom-document-scrollingelement)
+A polyfill for `document.scrollingElement` as defined in the [CSSDOM specification](https://drafts.csswg.org/cssom-view/#dom-document-scrollingelement)
 
 ## Installation
 ```bash
@@ -21,7 +22,7 @@ import 'scrolling-element'
 [Browser compatibility](https://developer.mozilla.org/en/docs/Web/API/document/scrollingElement#Browser_compatibility)
 
 ## Acknowledgements
-Thanks to Mathias Bynens for his [document.scrollElement](https://github.com/mathiasbynens/document.scrollingElement), and for allowing me to simplify the polyfill
+Thanks to Mathias Bynens for his [document.scrollingElement](https://github.com/mathiasbynens/document.scrollingElement), and for allowing me to simplify the polyfill
 
-## Liscense
+## License
 MIT
