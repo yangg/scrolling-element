@@ -56,4 +56,8 @@ module.exports = function (config) {
     // how many browser should be started simultaneous
     concurrency: Infinity
   })
+
+  if (process.env.npm_lifecycle_event === 'sauce') {
+    require('./.config/sauce.config')(config)
+  }
 }

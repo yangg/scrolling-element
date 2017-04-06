@@ -4,7 +4,8 @@
   "description": "A polyfill for document.scrollingElement",
   "main": "scrolling-element.js",
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "sauce": "karma start"
   },
   "author": "Brook Yang",
   "license": "MIT",
@@ -27,6 +28,7 @@
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-mocha": "^1.3.0",
+    "karma-sauce-launcher": "^1.1.0",
     "mocha": "^3.2.0"
   }
 }
