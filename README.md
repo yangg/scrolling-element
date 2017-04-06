@@ -1,4 +1,5 @@
 # document.scrollingElement
+[![Build Status](https://travis-ci.org/yangg/scrolling-element.svg?branch=master)](https://travis-ci.org/yangg/scrolling-element)
 [![npm:](https://img.shields.io/npm/v/scrolling-element.svg?style=flat)](https://www.npmjs.com/packages/scrolling-element)
 
 A polyfill for `document.scrollingElement` as defined in the [CSSDOM specification](https://drafts.csswg.org/cssom-view/#dom-document-scrollingelement)
