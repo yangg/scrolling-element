@@ -1,7 +1,7 @@
 /* eslint-env mocha, browser */
 /* global chai */
-const assert = chai.assert
-const INIT_TOP = 99
+var assert = chai.assert
+var INIT_TOP = 99
 before(function () {
   document.body.style.height = '999em'
   window.scrollTo(0, INIT_TOP)

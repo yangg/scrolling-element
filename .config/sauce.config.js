@@ -7,7 +7,11 @@ module.exports = function(config) {
 
   config.set({
     sauceLabs: {
-      testName: 'document.scrollingElement Tests'
+      testName: 'document.scrollingElement Tests',
+      username: process.env.SAUCE_USERNAME,
+      accessKey: process.env.SAUCE_ACCESS_KEY,
+      tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
+      startConnect: !('TRAVIS' in process.env)
     },
     customLaunchers: sauseBrowsers,
     browsers: Object.keys(sauseBrowsers),

@@ -1,78 +1,21 @@
 
-/*!
- * Internet Explorer
- */
-
-exports['SL_IE'] = {
-    base: 'SauceLabs'
-  , browserName: 'internet explorer'
-};
-
-exports['SL_IE_Old'] = {
-    base: 'SauceLabs'
-  , browserName: 'internet explorer'
-  , version: 10
-};
-
-exports['SL_Edge'] = {
-    base: 'SauceLabs'
-  , browserName: 'microsoftedge'
-};
-
-/*!
- * Safari
- */
-
-exports['SL_Safari'] = {
-    base: 'SauceLabs'
-  , browserName: 'safari'
-  , platform: 'Mac 10.11'
-};
-
-/*!
- * iPhone
- */
-
-/*!
- * TODO: These take forever to boot or shut down. Causes timeout.
- *
-
-exports['SL_iPhone_6'] = {
-    base: 'SauceLabs'
-  , browserName: 'iphone'
-  , platform: 'Mac 10.8'
-  , version: '6'
-};
-
-exports['SL_iPhone_5-1'] = {
-    base: 'SauceLabs'
-  , browserName: 'iphone'
-  , platform: 'Mac 10.8'
-  , version: '5.1'
-};
-
-exports['SL_iPhone_5'] = {
-    base: 'SauceLabs'
-  , browserName: 'iphone'
-  , platform: 'Mac 10.6'
-  , version: '5'
-};
-
-*/
-
-/*!
- * Android
- */
-
-/*!
- * TODO: fails because of error serialization
- *
-
-exports['SL_Android_4'] = {
-    base: 'SauceLabs'
-  , browserName: 'android'
-  , platform: 'Linux'
-  , version: '4'
-};
-
-*/
+function createBrowser(browserName, version, platform) {
+  return {
+    base: 'SauceLabs',
+    browserName,
+    version,
+    platform
+  }
+}
+module.exports = {
+  SL_Chrome: createBrowser('chrome', 43),
+  SL_Firefox: createBrowser('firefox', 47),
+  SL_IE: createBrowser('internet explorer'),
+  SL_IE_Old: createBrowser('internet explorer', 10),
+  SL_Safari: createBrowser('safari', 8, 'Mac 10.10'),
+  // mobile devices
+  SL_iPhone_8: createBrowser('iphone', '8.4'),
+  SL_Android_6: createBrowser('android', '6'),
+  SL_Android_5: createBrowser('android', '5.1'),
+  SL_Android_4: createBrowser('android', '4.4'),
+}
