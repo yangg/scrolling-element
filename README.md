@@ -22,8 +22,6 @@ import 'scrolling-element'
 ## Which browser need this?
 [Browser compatibility](https://developer.mozilla.org/en/docs/Web/API/document/scrollingElement#Browser_compatibility)
 
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/yanggtest.svg)](https://saucelabs.com/u/yanggtest)
-
 ## Acknowledgements
 Thanks to Mathias Bynens for his [document.scrollingElement](https://github.com/mathiasbynens/document.scrollingElement), and for allowing me to simplify the polyfill
 
