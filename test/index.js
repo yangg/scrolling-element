@@ -4,7 +4,7 @@ const assert = chai.assert
 const INIT_TOP = 99
 before(function () {
   document.body.style.height = '999em'
-  document.scrollingElement.scrollTop = INIT_TOP
+  window.scrollTo(0, INIT_TOP)
 })
 
 describe('scrollingElement', function () {
